@@ -31,7 +31,7 @@ int memoryLeakFunction() {
   cout << "Hello World" << endl;
   cout << "Fact 5: " << fact(5) << endl;
   // memory leak if we do not delete it
-  delete(arr);
+  delete[] arr;
   return 0;
 }
 
